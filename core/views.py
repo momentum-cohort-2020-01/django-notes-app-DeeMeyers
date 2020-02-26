@@ -11,6 +11,6 @@ def notes_list(request):
     return render(request, 'core/notes_list.html', {"notes": notes})
 
 
-def notes_detail(request, pk):
+def notes_details(request, pk):
     note = Notes.objects.get(pk=pk)
-    return render(request, 'core/notes_detail.html', {"note": note, "pk": pk})
+    return render(request, 'core/notes_details.html', {"note": note, "pk": pk})

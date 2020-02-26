@@ -7,7 +7,7 @@
 {% block content %}
 {% for note in notes %}
 <div class="note" id="{{note.pk}}">
-    <a style="font-weight: bold;" href="{% url 'notes_detail' note.pk %}">{{ note.item }}</a>
+    <a style="font-weight: bold;" href="{% url 'notes_details' note.pk %}">{{ note.item }}</a>
     <p>{{ note.description }}</p>
 </div>
 {% endfor %}
