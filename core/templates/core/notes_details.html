@@ -1,0 +1,15 @@
+<div>
+    <a href="/">GOOOO BAACCKKKK</a>
+</div>
+
+{% extends "base.html" %}
+
+{% block heading %}
+<h2>Note {{ pk }}: {{ note.item}} </h2>
+{% enblock %}
+
+{% block content %}
+<div class="note" id="{{ pk  }}">
+    <p style="margin: 0 25px 50px;">{{ note.description }}</p>
+</div>
+{% endblock %}
