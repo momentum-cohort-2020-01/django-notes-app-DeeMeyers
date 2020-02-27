@@ -9,6 +9,7 @@
 <div class="note" id="{{note.pk}}">
     <a style="font-weight: bold;" href="{% url 'notes_details' note.pk %}">{{ note.item }}</a>
     <p>{{ note.description }}</p>
+    <a href="{% url 'notes_edit' note.pk %}">Edit Note</a>
 </div>
 {% endfor %}
 {% endblock %}

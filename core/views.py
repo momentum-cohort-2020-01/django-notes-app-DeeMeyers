@@ -26,3 +26,8 @@ def notes_form(request):
         form = NotesForm()
     
     return render(request, 'core/notes_form.html', {"form": form})
+
+def notes_edit(request, pk):
+    note = Notes.objects.get(pk=pk)
+    
+    return render(request, 'core/notes_edit.html', {"form": note})
