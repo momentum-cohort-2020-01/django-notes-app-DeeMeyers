@@ -6,4 +6,7 @@
         {{form.as_table}}
     </table>
     <input type="submit" value="Edit">
+    <a href="{% url 'notes_delete' note.pk %}"><button type="button" class="button-danger">Danger</button></a>
+    
+
 </form>
